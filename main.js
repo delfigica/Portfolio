@@ -1,51 +1,9 @@
 const proyectos = [
     {
-        img: "./imagenes/dr. Norman Borlaug.jpg",
-        titulo: "Proyecto: Página tributo Dr. Norman Borlaug",
-        linkLive: "#",
-        linkGit: "#",
-        descripción: "Este proyecto es parte de los proyectos de certificación de Free Code Camp de Dessarrollo Web Responsive. En este caso, es una página tributo para el Dr. Norman Borlaug. Trabajo desarrollado con HTML y CSS"
-    },
-    {
-        img: "./imagenes/dr. Norman Borlaug.jpg",
-        titulo: "Proyecto: Formulario",
-        linkLive: "#",
-        linkGit: "#",
-        descripción: "Este proyecto es parte de los proyectos de certificación de Free Code Camp de Dessarrollo Web Responsive. En este caso, es un formulario. Trabajo desarrollado con HTML y CSS"
-    },
-    {
-        img: "./imagenes/dr. Norman Borlaug.jpg",
-        titulo: "Proyecto: Tienda de trompetas",
-        linkLive: "#",
-        linkGit: "#",
-        descripción: "Este proyecto es parte de los proyectos de certificación de Free Code Camp de Dessarrollo Web Responsive. En este caso, es una página de presentación de una tienda de Trompetas. Trabajo desarrollado con HTML y CSS"
-    },
-    {
-        img: "./imagenes/dr. Norman Borlaug.jpg",
-        titulo: "Proyecto: Página documentación",
-        linkLive: "#",
-        linkGit: "#",
-        descripción: "Este proyecto es parte de los proyectos de certificación de Free Code Camp de Dessarrollo Web Responsive. En este caso, es una página con documentación sobre JavaScript. Trabajo desarrollado con HTML y CSS"
-    },
-    {
-        img: "./imagenes/dr. Norman Borlaug.jpg",
-        titulo: "Proyecto: Página portafolio",
-        linkLive: "#",
-        linkGit: "#",
-        descripción: "Este proyecto es parte de los proyectos de certificación de Free Code Camp de Dessarrollo Web Responsive. En este caso, es mi Portafolio con proyectos de FreeCodeCamp. Trabajo desarrollado con HTML y CSS"
-    },
-    {
-        img: "./imagenes/dr. Norman Borlaug.jpg",
-        titulo: "Proyecto: Página Web para Cantante",
-        linkLive: "#",
-        linkGit: "#",
-        descripción: "Este proyecto fue desarrollada para el músico Horacio Burgos como página de presentación que incluye su discografia, historia y algunas de las entrevistas que dió a medios. Trabajo desarrollado con HTML, CSS y BOOTSTRAP"
-    },
-    {
-        img: "./imagenes/dr. Norman Borlaug.jpg",
+        img: "./imagenes/clear-sky.png",
         titulo: "Proyecto: Aplicación de clima",
-        linkLive: "#",
-        linkGit: "#",
+        linkLive: "https://delfigica.github.io/Clear-Sky/",
+        linkGit: "https://github.com/delfigica/Clear-Sky",
         descripción: "Este proyecto es una aplicación de Clima con un API request de la api 'Open Weather Map'. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
     },    
     {
@@ -54,8 +12,35 @@ const proyectos = [
         linkLive: "#",
         linkGit: "#",
         descripción: "Este proyecto es un CRUD, una aplicación de notas que extrae información de un backend sencillo. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
+    },
+    {
+        img: "./imagenes/dr. Norman Borlaug.jpg",
+        titulo: "Proyecto: Aplicación de presupuesto",
+        linkLive: "#",
+        linkGit: "#",
+        descripción: "Este proyecto es una aplicación que recauda datos sobre ingresos y egresos del usuario y le debuelve su presupuesto. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
+    },
+    {
+        img: "./imagenes/horacio-burgos.png",
+        titulo: "Proyecto: Página Web para Cantante",
+        linkLive: "https://delfigica.github.io/Horacio-Burgos-musica/",
+        linkGit: "https://github.com/delfigica/Horacio-Burgos-musica",
+        descripción: "Este proyecto fue desarrollada para el músico Horacio Burgos como página de presentación que incluye su discografia, historia y algunas de las entrevistas que dió a medios. Trabajo desarrollado con HTML, CSS y BOOTSTRAP"
+    },
+    {
+        img: "./imagenes/dr. Norman Borlaug.jpg",
+        titulo: "Proyecto: Página tributo Dr. Norman Borlaug",
+        linkLive: "https://delfigica.github.io/ffc-project1/",
+        linkGit: "https://github.com/delfigica/ffc-project1",
+        descripción: "Este proyecto es parte de los proyectos de certificación de Free Code Camp de Dessarrollo Web Responsive. En este caso, es una página tributo para el Dr. Norman Borlaug. Trabajo desarrollado con HTML y CSS"
+    },
+    {
+        img: "./imagenes/form.png",
+        titulo: "Proyecto: Formulario",
+        linkLive: "https://delfigica.github.io/ffc-project2/",
+        linkGit: "https://github.com/delfigica/ffc-project2",
+        descripción: "Este proyecto es parte de los proyectos de certificación de Free Code Camp de Dessarrollo Web Responsive. En este caso, es un formulario. Trabajo desarrollado con HTML y CSS"
     }
-
     
 ]
 for (i = 0; i < proyectos.length; i++){
@@ -69,8 +54,8 @@ for (i = 0; i < proyectos.length; i++){
     <h2 class="titulo-proyecto">${proyectos[i].titulo}</h2>
     <p class="descripcion-proyecto">${proyectos[i].descripción}</p>
     <div class="btns-proyecto">
-    <button class="btn-proyecto"><a href="#" class="a-btn-proyecto">Line</a></button>
-    <button class="btn-proyecto"><a href="#" class="a-btn-proyecto">Git</a></button></div>
+    <button class="btn-proyecto"><a href="${proyectos[i].linkLive}" target="_blank" class="a-btn-proyecto"><i class="fas fa-wifi"></i></a></button>
+    <button class="btn-proyecto"><a href="${proyectos[i].linkGit}" target="_blank" class="a-btn-proyecto"><i class="fab fa-github"></i></a></button></div>
     </div>
     </div>`
 
@@ -78,7 +63,7 @@ for (i = 0; i < proyectos.length; i++){
     document.getElementById("proyectos").appendChild(item)
 }
 
-const showMenu = () => {
-    const navResponsive = document.querySelector(".ul-nav-responsive");
+function showMenu() {
+    const navResponsive = document.querySelector(".group-a-nav-responsive");
     navResponsive.classList.toggle("d-none")
 }
