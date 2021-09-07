@@ -18,7 +18,7 @@ const proyectos = [
         titulo: "Proyecto: Aplicación de presupuesto",
         linkLive: "https://delfigica.github.io/Presupuesto/",
         linkGit: "https://github.com/delfigica/Presupuesto",
-        descripción: "Este proyecto es una aplicación que recauda datos sobre ingresos y egresos del usuario y le debuelve su presupuesto. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
+        descripción: "Este proyecto es una aplicación que recauda datos sobre ingresos y egresos del usuario y le devuelve su presupuesto. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
     },
     {
         img: "./imagenes/horacio-burgos.png",
