@@ -1,91 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delfina</title>
-    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-</head>
-<body>
+    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="banner">
-            <h1 class="nombre-banner">
-                Delfina Cañas
-            </h1>
-            <h3 id="saludo">
-                desarolladora web
-            </h3>
-            <group-btns-slider>
-                <button class="btn-slider"><a href="http://cv.delfi.ar/" target="_blank" class="btn-a-slider"><i class="fas fa-clipboard i-slider"></i>CV</a></button>
-                <button class="btn-slider btn-portfolio"><a href="#proyect" class="btn-a-slider">Portfolio<i class="fas fa-chevron-down i-slider"></i></a></button>
-            </group-btns-slider>
-        </div>
+      <div class="banner">
+        <h1 class="nombre-banner">Delfina Cañas</h1>
+        <h3 id="saludo">desarolladora web</h3>
+        <group-btns-slider>
+          <button class="btn-slider">
+            <a href="http://cv.delfi.ar/" target="_blank" class="btn-a-slider"
+              ><i class="fas fa-clipboard i-slider"></i>CV</a
+            >
+          </button>
+          <button class="btn-slider btn-portfolio">
+            <a href="#proyect" class="btn-a-slider"
+              >Portfolio<i class="fas fa-chevron-down i-slider"></i
+            ></a>
+          </button>
+        </group-btns-slider>
+      </div>
 
-        <nav class="nav">
-            <h2 class="title-nav">
-                María Delfina Cañas
-            </h2>
-            <ul class="ul-nav nav-normal">
-                <a href="#" class="a-nav">
-                    <li class="li-nav">Inicio</li>
-                </a>
-                <a href="#proyect" class="a-nav">
-                    <li class="li-nav">Proyectos</li>
-                </a>
-                <a href="#" class="a-nav">
-                    <li class="li-nav">Sobre Mí</li>
-                </a>
-                <!-- <li></li> -->
-            </ul>
-            
-            <ul class="ul-nav-responsive " >
-                <button class="icon-responsive" onclick="showMenu()">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="group-a-nav-responsive d-none">
-                    <a href="#" class="a-nav-responsive">
-                        <li class="li-nav-responsive">Inicio</li>
-                    </a>
-                    <a href="#" class="a-nav-responsive">
-                        <li class="li-nav-responsive">Proyectos</li>
-                    </a>
-                    <a href="#" class="a-nav-responsive">
-                        <li class="li-nav-responsive">Sobre Mí</li>
-                    </a>
-                </div>
+      <nav class="nav">
+        <h2 class="title-nav">María Delfina Cañas</h2>
+        <ul class="ul-nav nav-normal">
+          <a href="#" class="a-nav">
+            <li class="li-nav">Inicio</li>
+          </a>
+          <a href="#proyect" class="a-nav">
+            <li class="li-nav">Proyectos</li>
+          </a>
+          <a href="#" class="a-nav">
+            <li class="li-nav">Sobre Mí</li>
+          </a>
+          <!-- <li></li> -->
+        </ul>
 
-            </ul>
-        </nav>
+        <ul class="ul-nav-responsive">
+          <button class="icon-responsive" onclick="showMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="group-a-nav-responsive d-none">
+            <a href="#" class="a-nav-responsive">
+              <li class="li-nav-responsive">Inicio</li>
+            </a>
+            <a href="#" class="a-nav-responsive">
+              <li class="li-nav-responsive">Proyectos</li>
+            </a>
+            <a href="#" class="a-nav-responsive">
+              <li class="li-nav-responsive">Sobre Mí</li>
+            </a>
+          </div>
+        </ul>
+      </nav>
 
-            <div id="proyect" class="proyectos-contenedor">
-                <h2 class="proyectos">
-                    Proyectos
-                </h2>
-                <div id="proyectos"></div>
-            </div>
+      <div id="proyect" class="proyectos-contenedor">
+        <h2 class="proyectos">Proyectos</h2>
+        <div id="proyectos"></div>
+      </div>
 
-        <div class="contacto">
-            <h3 class="title-contacto">
-                Trabajemos juntos
-            </h3>
-            <p class="p-contacto">
-                Contactame
+      <div class="sobre-mi">
+
+          <div class="texto-sobre-mi">
+            <h2 class="title-sobre-mi">Sobre Mí</h2>
+            <p class="cuerpo-sobre-mi">
+              Hola, soy Delfi, una jóven entusiasta interesada en el mundo
+              técnologico y en el mundo de posiblidades que este ofrece. Tengo 21,
+              actualmente me encuentro viviendo en Villa Carlos Paz - Córdoba -
+              Argentina. <br>
+              Entre mis metas a largo plazo se encuentra el llegar a desarrollar videojuegos y entre mis metas a corto plazo el empezar a crecer como desarrolladora web.
+              <br>
+              Entre las tecnologías que utilizo se encuentran HTML, CSS, Bootstrap, JavaScript, Angular y NodeJS.
             </p>
-            <ul class="ul-contacto">
-                <a href="https://www.linkedin.com/in/delfina-ca%C3%B1as-459b6320b/" target="_blank" class="a-contacto"><li class="li-contacto"><i class="fab fa-linkedin-in"></i>Linkedin</li></a>
-                <a href="https://github.com/delfigica" target="_blank" class="a-contacto"><li class="li-contacto"><i class="fab fa-github"></i>GitHub</li></a>
-                <a href="https://www.instagram.com/delfi_gica/" target="_blank" class="a-contacto"><li class="li-contacto"><i class="fab fa-instagram"></i>Instagram</li></a>
-                <a href="mailto:delfinamariacanas@gmail.com" target="_blank" class="a-contacto mail"><li class="li-contacto"><i class="far fa-envelope"></i>delfinamariacanas@gmail.com</li></a>
-                <a href="https://wa.me/543517892542/?text=tu%20texto%20personalizado" target="_blank" class="a-contacto"><li class="li-contacto"><i class="fab fa-whatsapp"></i>Whatsapp</li></a>
-                <a href="https://telegram.me/delfi_gica" target="_blank" class="a-contacto"><li class="li-contacto"><i class="fab fa-telegram-plane"></i>Telegram</li></a>
-
-            </ul>
+          </div>
+          <div class="sobre-mi-img">
+            <img src="./imagenes/yo.jfif" alt="Delfi Cañas">
         </div>
+      </div>
+      <div class="contacto">
+        <h3 class="title-contacto">Trabajemos juntos</h3>
+        <p class="p-contacto">Contactame</p>
+        <ul class="ul-contacto">
+          <a
+            href="https://www.linkedin.com/in/delfina-ca%C3%B1as-459b6320b/"
+            target="_blank"
+            class="a-contacto"
+            ><li class="li-contacto">
+              <i class="fab fa-linkedin-in"></i>Linkedin
+            </li></a
+          >
+          <a
+            href="https://github.com/delfigica"
+            target="_blank"
+            class="a-contacto"
+            ><li class="li-contacto"><i class="fab fa-github"></i>GitHub</li></a
+          >
+          <a
+            href="https://www.instagram.com/delfi_gica/"
+            target="_blank"
+            class="a-contacto"
+            ><li class="li-contacto">
+              <i class="fab fa-instagram"></i>Instagram
+            </li></a
+          >
+          <a
+            href="mailto:delfinamariacanas@gmail.com"
+            target="_blank"
+            class="a-contacto mail"
+            ><li class="li-contacto">
+              <i class="far fa-envelope"></i>delfinamariacanas@gmail.com
+            </li></a
+          >
+          <a
+            href="https://wa.me/543517892542/?text=tu%20texto%20personalizado"
+            target="_blank"
+            class="a-contacto"
+            ><li class="li-contacto">
+              <i class="fab fa-whatsapp"></i>Whatsapp
+            </li></a
+          >
+          <a
+            href="https://telegram.me/delfi_gica"
+            target="_blank"
+            class="a-contacto"
+            ><li class="li-contacto">
+              <i class="fab fa-telegram-plane"></i>Telegram
+            </li></a
+          >
+        </ul>
+      </div>
     </div>
     <script src="main.js"></script>
-
-</body>
+  </body>
 </html>
