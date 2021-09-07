@@ -14,11 +14,11 @@ const proyectos = [
         descripción: "Este proyecto es un CRUD, una aplicación de notas que extrae información de un backend sencillo. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
     },
     {
-        img: "./imagenes/dr. Norman Borlaug.jpg",
+        img: "./imagenes/presupuesto.png",
         titulo: "Proyecto: Aplicación de presupuesto",
-        linkLive: "#",
-        linkGit: "#",
-        descripción: "Este proyecto es una aplicación que recauda datos sobre ingresos y egresos del usuario y le debuelve su presupuesto. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
+        linkLive: "https://delfigica.github.io/Presupuesto/",
+        linkGit: "https://github.com/delfigica/Presupuesto",
+        descripción: "Este proyecto es una aplicación que recauda datos sobre ingresos y egresos del usuario y le devuelve su presupuesto. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
     },
     {
         img: "./imagenes/horacio-burgos.png",
