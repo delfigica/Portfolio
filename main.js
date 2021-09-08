@@ -6,13 +6,13 @@ const proyectos = [
         linkGit: "https://github.com/delfigica/Clear-Sky",
         descripción: "Este proyecto es una aplicación de Clima con un API request de la api 'Open Weather Map'. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
     },    
-    {
-        img: "./imagenes/dr. Norman Borlaug.jpg",
-        titulo: "Proyecto: Aplicación de notas",
-        linkLive: "#",
-        linkGit: "#",
-        descripción: "Este proyecto es un CRUD, una aplicación de notas que extrae información de un backend sencillo. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
-    },
+    // {
+    //     img: "./imagenes/dr. Norman Borlaug.jpg",
+    //     titulo: "Proyecto: Aplicación de notas",
+    //     linkLive: "#",
+    //     linkGit: "#",
+    //     descripción: "Este proyecto es un CRUD, una aplicación de notas que extrae información de un backend sencillo. Trabajo desarrollado con HTML, CSS y con JS con el framework ANGULAR"
+    // },
     {
         img: "./imagenes/presupuesto.png",
         titulo: "Proyecto: Aplicación de presupuesto",
