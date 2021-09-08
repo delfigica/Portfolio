@@ -183,7 +183,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 100vh;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  text-align: justify;
 
 }
 .sobre-mi-img {
@@ -229,6 +231,13 @@ img {
     flex-wrap: wrap;
   }
   .texto-proyecto {
+    margin: 10px;
+  }
+
+  .texto-sobre-mi {
+  width: 90%;
+  }
+  .sobre-mi-img {
     margin: 10px;
   }
 }
