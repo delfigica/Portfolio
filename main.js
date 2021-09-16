@@ -54,8 +54,8 @@ for (i = 0; i < proyectos.length; i++){
     <h2 class="titulo-proyecto">${proyectos[i].titulo}</h2>
     <p class="descripcion-proyecto">${proyectos[i].descripción}</p>
     <div class="btns-proyecto">
-    <button class="btn-proyecto"><a href="${proyectos[i].linkLive}" target="_blank" class="a-btn-proyecto"><i class="fas fa-wifi"></i></a></button>
-    <button class="btn-proyecto"><a href="${proyectos[i].linkGit}" target="_blank" class="a-btn-proyecto"><i class="fab fa-github"></i></a></button></div>
+    <button class="btn-proyecto"><a href="${proyectos[i].linkLive}" target="_blank" class="a-btn-proyecto"><i class="fas fa-wifi i-btn-proyecto"></i>LIVE</a></button>
+    <button class="btn-proyecto"><a href="${proyectos[i].linkGit}" target="_blank" class="a-btn-proyecto"><i class="fab fa-github i-btn-proyecto"></i>REPO</a></button></div>
     </div>
     </div>`
 
