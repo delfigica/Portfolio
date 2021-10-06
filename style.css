@@ -200,8 +200,7 @@ img {
   border-style: none;
   background-color: rgb(170, 77, 77);
   color: white;
-  width: 150px;
-  height: 30px;
+  padding: .8rem 1.5rem;
   margin: 10px;
 
 }
@@ -211,8 +210,8 @@ img {
   font-size: 1.2em;
 }
 .i-btn-proyecto {
-  font-size: 20px;
-  margin: 0px 5px;
+  font-size: 1rem;
+  margin: 0px 12px 0px 0px;
 }
 .contacto {
   display: flex;
@@ -245,8 +244,7 @@ img {
   font-size: 1.3em;
   color: white;
 }
-.fab,
-.far {
+.i-contact {
   margin: 0px 10px;
 }
 .sobre-mi {
