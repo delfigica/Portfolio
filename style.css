@@ -11,48 +11,98 @@
 .d-none {
     display: none;
 }
-.banner {
-  height: 100vh;
+#banner {
+  min-height: 100vh;
+}
+.navbar {
+  background-color: rgb(170, 77, 77);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
-}
-.nombre-banner {
-  margin: 20px 0px;
-  font-size: 3.5em;
-}
-#saludo {
-  font-size: 2em;
+  height: 10vh;
 
 }
-.btn-slider {
-  border-style: none;
-  margin: 20px;
-  font-size: 20px;
-  background-color: white;
-  border:  2px solid black;
-  border-radius: 2px;
-  padding: 10px;
+.nav-banner {
+  display: flex;
+  justify-content: space-evenly;
 }
-.btn-cv {
-  padding-left: 5px;
+.link-navbar {
+  color: white;
+  text-decoration: none;
+  margin: 0px 30px;
 }
-.btn-a-slider {
-  color: black;
+.contenedor-informacion {
+  display: flex;
+  justify-content: space-between;
+
+}
+.imagen {
+  background-image: url('./imagenes/fondo-banner.jpg');
+  width: 50vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.contenedor-texto-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: rgba(58, 21, 21, 0.453);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  height: 100%;
+}
+.informacion {
+  background-color: rgb(170, 77, 77);
+  color: white;
+  height: 90vh;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.titulo-informacion {
+  margin: 5px 0px;
+}
+.datos-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.texto-datos-contacto {
+  margin: 5px 0px;
+}
+.img-informacion {
+  width: 150px;
+  height: 150px;
+  background-image: url('./imagenes/yo.jfif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.texto-datos-contacto {
+  color: #fff;
   text-decoration: none;
 }
-.i-slider{
-  margin: 0px 10px;
+.lista-redes-sociales{
+  list-style: none;
+  display: flex;
 }
-.btn-portfolio {
-  transition: 2s;
+.link-redes-sociales {
+  font-size: 30px;
+  color: #fff;
+  margin: 0px 5px;
 }
-.btn-portfolio:hover {
-  transition: 2s;
-  position: relative;
-  top: 10px;
+.btn-cv {
+  border-style: none;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+}
+.link-cv {
+  text-decoration: none;
+  color: rgb(170, 77, 77);
+
 }
 
 .nav {
@@ -61,7 +111,7 @@
   justify-content: space-between;
   padding: 10px 20px;
   color: white;
-  background-color: rgb(58, 53, 53);
+  background-color: rgb(170, 77, 77);
   position: sticky;
   top: 0px;
   font-family: "Montserrat", sans-serif;
@@ -103,7 +153,7 @@
 }
 .icon-responsive {
   border-style: none;
-  background-color: rgb(58, 53, 53);
+  background-color: rgb(170, 77, 77);
   width: 40px;
 }
 .fa-bars {
@@ -114,14 +164,15 @@
   display: flex;
   align-items: center;
   margin: 50px auto;
-  width: 90%;
 
 }
 .texto-proyecto {
-  margin: 70px;
+  margin: 30px;
+  width: 50%;
 }
 .img-container {
-  width: 1200px;
+  width: 700px;
+  object-fit: cover;
 }
 img {
   width: 100%;
@@ -133,21 +184,29 @@ img {
   color: rgb(58, 53, 53);
   font-size: 2em;
 }
+.proyect-container {
+  display: flex;
+  flex-direction: column;
+}
 .descripcion-proyecto {
   text-align: justify;
 
 }
 .btns-proyecto {
-  text-align: right;
+  text-align: center;
   margin: 20px;
 }
 .btn-proyecto {
   border-style: none;
-  background-color: white;
+  background-color: rgb(170, 77, 77);
+  color: white;
+  width: 150px;
+  height: 30px;
+  margin: 10px;
 
 }
 .a-btn-proyecto {
-  color: black;
+  color: #fff;
   text-decoration: none;
   font-size: 1.2em;
 }
@@ -160,7 +219,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(58, 53, 53);
+  background-color: rgb(170, 77, 77);
   color: white;
   padding: 20px;
   height: 100vh;
@@ -211,8 +270,24 @@ img {
   margin: 10px 0px;
 }
 @media (max-width: 600px) {
-  .nombre-banner {
-    font-size: 2.5em;
+  .navbar {
+    display: none;
+  }
+  .contenedor-informacion {
+    flex-direction: column;
+  }
+  .imagen {
+    width: 100vw;
+  }
+  .informacion {
+    width: 100vw;
+  }
+  .img-container {
+    width: 300px;
+  }
+  .texto-proyecto {
+    width: 90%;
+    margin: 10px 0px;
   }
   .ul-nav {
     display: none;

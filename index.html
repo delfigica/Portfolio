@@ -15,37 +15,108 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="banner">
-        <h1 class="nombre-banner">Delfina Cañas</h1>
-        <h3 id="saludo">desarolladora web</h3>
-        <group-btns-slider>
-          <button class="btn-slider btn-cv">
-            <a href="http://cv.delfi.ar/" target="_blank" class="btn-a-slider"
-              ><i class="fas fa-clipboard i-slider"></i>CV</a
-            >
-          </button>
-          <button class="btn-slider btn-portfolio">
-            <a href="#proyect" class="btn-a-slider"
-              >Portfolio<i class="fas fa-chevron-down i-slider"></i
-            ></a>
-          </button>
-        </group-btns-slider>
+    <div id="banner">
+      <div class="navbar">
+        <div class="nav-banner">
+          <a href="#proyect" class="link-navbar">Proyectos</a>
+          <a href="#sobre-mi" class="link-navbar">Sobre Mí</a>
+          <a href="#contacto" class="link-navbar">Contacto</a>
+        </div>
       </div>
+     
+      <div class="contenedor-informacion">
 
+        <div class="imagen">
+
+          <div class="contenedor-texto-img">
+            <p class="parrafo-banner">Hola, soy</p>
+            <h1 class="nombre-banner">Delfina Cañas.</h1>
+            <p class="especializacion-banner">Desarrolladora web</p>
+          </div>
+
+        </div>
+
+        <div class="informacion">
+          <div class="img-informacion">
+          </div>
+
+          <div class="especializacion-informacion">
+            <h2 class="titulo-informacion">Delfina Cañas</h2>
+            <p class="texto-especializacion">Desarrolladora web</p>
+          </div>
+
+          <div class="datos-contacto">
+            <a
+              href="mailto:delfinamariacanas@gmail.com"
+              class="texto-datos-contacto"
+            >
+              delfinamariacanas@gmail.com
+            </a>
+            <a href="tel:+5493517892542" class="texto-datos-contacto"
+              >+54 9 351 7892542</a
+            >
+          </div>
+
+          <div class="redes-sociales">
+            <ul class="lista-redes-sociales">
+              <a
+                href="https://www.linkedin.com/in/delfina-ca%C3%B1as-459b6320b/"
+                target="_blank"
+                class="link-redes-sociales"
+                ><li class="li-redes-sociales">
+                  <i class="fab fa-linkedin-in"></i></li
+              ></a>
+              <a
+                href="https://github.com/delfigica"
+                target="_blank"
+                class="link-redes-sociales"
+                ><li class="li-redes-sociales"><i class="fab fa-github"></i></li
+              ></a>
+              <a
+                href="https://www.instagram.com/delfi_gica/"
+                target="_blank"
+                class="link-redes-sociales"
+                ><li class="li-redes-sociales">
+                  <i class="fab fa-instagram"></i></li
+              ></a>
+              <a
+                href="https://wa.me/543517892542/?text=tu%20texto%20personalizado"
+                target="_blank"
+                class="link-redes-sociales"
+                ><li class="li-redes-sociales">
+                  <i class="fab fa-whatsapp"></i></li
+              ></a>
+              <a
+                href="https://telegram.me/delfi_gica"
+                target="_blank"
+                class="link-redes-sociales"
+                ><li class="li-redes-sociales">
+                  <i class="fab fa-telegram-plane"></i></li
+              ></a>
+            </ul>
+          </div>
+          <div class="boton-cv">
+            <button class="btn-cv"><a href="http://cv.delfi.ar/" target="_blank" class="link-cv">Descargar CV</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
       <nav class="nav">
-        <h2 class="title-nav">María Delfina Cañas</h2>
+        <h2 class="title-nav">Delfina Cañas.</h2>
         <ul class="ul-nav nav-normal">
-          <a href="#" class="a-nav">
-            <li class="li-nav">Inicio</li>
-          </a>
+
           <a href="#proyect" class="a-nav">
             <li class="li-nav">Proyectos</li>
           </a>
-          <a href="#" class="a-nav">
+          <a href="#sobre-mi" class="a-nav">
             <li class="li-nav">Sobre Mí</li>
           </a>
-          <!-- <li></li> -->
+          <a href="#contacto" class="a-nav">
+            <li class="li-nav">Contacto</li>
+          </a>
         </ul>
 
         <ul class="ul-nav-responsive">
@@ -53,14 +124,15 @@
             <i class="fas fa-bars"></i>
           </button>
           <div class="group-a-nav-responsive d-none">
-            <a href="#" class="a-nav-responsive">
-              <li class="li-nav-responsive">Inicio</li>
-            </a>
-            <a href="#" class="a-nav-responsive">
+
+            <a href="#proyect" class="a-nav-responsive">
               <li class="li-nav-responsive">Proyectos</li>
             </a>
-            <a href="#" class="a-nav-responsive">
+            <a href="#sobre-mi" class="a-nav-responsive">
               <li class="li-nav-responsive">Sobre Mí</li>
+            </a>
+            <a href="#contacto" class="a-nav-responsive">
+              <li class="li-nav-responsive">Contacto</li>
             </a>
           </div>
         </ul>
@@ -71,24 +143,27 @@
         <div id="proyectos"></div>
       </div>
 
-      <div class="sobre-mi">
-
-          <div class="texto-sobre-mi">
-            <h2 class="title-sobre-mi">Sobre Mí</h2>
-            <p class="cuerpo-sobre-mi">
-              Hola, soy Delfi, una jóven entusiasta interesada en la gran cantidad de posibilidades que ofrece el mundo tecnologico y del desarrollo. Tengo 21,
-              actualmente me encuentro viviendo en Villa Carlos Paz - Córdoba -
-              Argentina. <br>
-              Entre mis metas a largo plazo se encuentra el llegar a desarrollar videojuegos y a corto plazo el empezar a crecer como desarrolladora web.
-              <br>
-              Entre las tecnologías que utilizo se encuentran HTML, CSS, Bootstrap, JavaScript, Angular y NodeJS.
-            </p>
-          </div>
-          <div class="sobre-mi-img">
-            <img src="./imagenes/yo.jfif" alt="Delfi Cañas">
+      <div class="sobre-mi" id="sobre-mi">
+        <div class="texto-sobre-mi">
+          <h2 class="title-sobre-mi">Sobre Mí</h2>
+          <p class="cuerpo-sobre-mi">
+            Hola, soy Delfi, una jóven entusiasta interesada en la gran cantidad
+            de posibilidades que ofrece el mundo tecnologico y del desarrollo.
+            Tengo 21, actualmente me encuentro viviendo en Villa Carlos Paz -
+            Córdoba - Argentina. <br />
+            Entre mis metas a largo plazo se encuentra el llegar a desarrollar
+            videojuegos y a corto plazo el empezar a crecer como desarrolladora
+            web.
+            <br />
+            Entre las tecnologías que utilizo se encuentran HTML, CSS,
+            Bootstrap, JavaScript, Angular y NodeJS.
+          </p>
+        </div>
+        <div class="sobre-mi-img">
+          <img src="./imagenes/yo.jfif" alt="Delfi Cañas" />
         </div>
       </div>
-      <div class="contacto">
+      <div class="contacto" id="contacto">
         <h3 class="title-contacto">Trabajemos juntos</h3>
         <p class="p-contacto">Contactame</p>
         <ul class="ul-contacto">
